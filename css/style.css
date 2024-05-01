@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* 開発用アウトライン*/
+* {
+    outline:1px solid blue;
+}
+
+/*全体設定*/
+html {
+    max-width:100vw;
+    background-color: #ffcbcb;
+    display:flex;
+    justify-content: center;
+    height:100vh;
+}
+
+header,main {
+    width:30vw;
+}
+
+#home {
+    display:flex;
+    height:4.5vh;
+    align-items: center;
+    padding-left:1vw;
+    margin-top:2.5vh;
+    position:fixed;
+}
+
+#home img {
+    height:4.5vh;
+}
+
+#home p {
+    color:#ff4c4c;
+    font-family: "Josefin Sans", sans-serif;
+    font-size:20px;
+}
+
+header {
+    background-color: #f2f8ea;
+    width:30vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position:fixed;
+    z-index:-1;
+}
+
+#curtain {
+    width:30vw;
+    position:absolute;
+    top:90%;
+    z-index:2;
+}
+
+main {
+    display:block;
+    justify-content:center;
+    background-color: #90e090;
+    position:relative;
+    z-index:-1;
+    clip-path:polygon(0 100%, 100% 0,100% 0, 100% 100%);
+    position:relative;
+    margin-top:100vh;
+}
